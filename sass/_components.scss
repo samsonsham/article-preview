@@ -110,7 +110,7 @@
       &.active {
         background-color: $clr-bg-btn-2;
         img {
-          filter: brightness(4);
+          filter: brightness(0) invert(1);
         }
       }
     }
@@ -189,7 +189,7 @@
     }
     img {
       vertical-align: middle;
-      filter: brightness(4);
+      filter: brightness(0) invert(1);
     }
   }
   &::after {
