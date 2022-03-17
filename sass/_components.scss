@@ -107,6 +107,12 @@
     cursor: pointer;
     @media (min-width: $breakpoint-md) {
       margin-top: 0.1rem;
+      &.active {
+        background-color: $clr-bg-btn-2;
+        img {
+          filter: brightness(4);
+        }
+      }
     }
     &::before {
       content: '';

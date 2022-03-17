@@ -5,10 +5,12 @@ const shareBtnListener = () => {
 
   shareBtnPerson.addEventListener('click', () => {
     sharePopup.classList.toggle('show-box');
+    shareBtnPerson.classList.toggle('active');
   });
 
   shareBtn.addEventListener('click', () => {
     sharePopup.classList.remove('show-box');
+    shareBtnPerson.classList.remove('active');
   });
 };
 const init = () => {

@@ -186,6 +186,12 @@ main {
   .card-person-share-btn {
     margin-top: 0.1rem;
   }
+  .card-person-share-btn.active {
+    background-color: #6d7f97;
+  }
+  .card-person-share-btn.active img {
+    filter: brightness(4);
+  }
 }
 .card-person-share-btn::before {
   content: "";
