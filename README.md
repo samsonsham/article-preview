@@ -80,7 +80,7 @@ const shareBtnListener = () => {
   const sharePopup = document.querySelector('.wrapper');
 
   shareBtn.addEventListener('click', () => {
-    sharePopup.classList.remove('show-box');
+    sharePopup.classList.toggle('show-box');
   });
 };
 ```
