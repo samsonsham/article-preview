@@ -87,9 +87,9 @@ const shareBtnListener = () => {
 
 ### Useful resources
 
-- [CSS 3 slide-in from left transition](https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition) - I learnt slide-in animation from here.
-- [CSS Tooltip - W3Schools](https://www.w3schools.com/css/css_tooltip.asp) - I learnt makeing tooltip with bottom arrow from here.
-- [How to vertically align an image inside a div](https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div) - I learnt how vertical align works from here.
+- [CSS 3 slide-in from left transition](https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition) - I learnt slide-in animation from this.
+- [CSS Tooltip - W3Schools](https://www.w3schools.com/css/css_tooltip.asp) - I learnt makeing tooltip with bottom arrow from this.
+- [How to vertically align an image inside a div](https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div) - I learnt how vertical align works from this.
 
 ## Author
 
