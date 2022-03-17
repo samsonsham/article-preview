@@ -10,6 +10,7 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 /* Neutral Colors
 --------------------------------------*/
 $white: hsl(0, 0%, 100%);
+$grayish-blue-trans: hsla(212, 23%, 69%, 0.3);
 
 /* Colors by element
 --------------------------------------*/
@@ -23,6 +24,7 @@ $clr-txt-card-p: $grayish-blue;
 $clr-txt-person-name: $very-dark-grayish-blue;
 $clr-txt-person-date: $grayish-blue;
 $clr-txt-share: $grayish-blue;
+$clr-card-shadow: $grayish-blue-trans;
 
 $clr-txt-attribution: $white;
 
