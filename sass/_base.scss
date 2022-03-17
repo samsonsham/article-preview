@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* Primary Colors
+--------------------------------------*/
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+/* Neutral Colors
+--------------------------------------*/
+$white: hsl(0, 0%, 100%);
+
+/* Colors by element
+--------------------------------------*/
+$clr-bg-body: $light-grayish-blue;
+$clr-bg-card: $white;
+$clr-bg-card-share: $very-dark-grayish-blue;
+$clr-bg-btn-1: $light-grayish-blue;
+$clr-bg-btn-2: $desaturated-dark-blue;
+$clr-txt-card-h: $desaturated-dark-blue;
+$clr-txt-card-p: $grayish-blue;
+$clr-txt-person-name: $very-dark-grayish-blue;
+$clr-txt-person-date: $grayish-blue;
+$clr-txt-share: $grayish-blue;
+
+$clr-txt-attribution: $white;
+
+/* Breakpoints
+--------------------------------------*/
+$breakpoint-md: 768px;
+
+/* Typography
+--------------------------------------*/
+$font-size: 13px;
+$ff-primary: 'Manrope', sans-serif;
+
+/* Reset
+--------------------------------------*/
+html,
+body,
+main,
+h1,
+h2,
+p,
+ul,
+li,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

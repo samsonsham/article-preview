@@ -1,0 +1,207 @@
+/* Card
+--------------------------------------*/
+.card {
+  background-color: $white;
+  width: 100%;
+  max-width: 25rem;
+
+  border-radius: 0.5rem;
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    height: 17.5rem;
+    max-width: 45.5rem;
+  }
+  &-image {
+    height: 12.5rem;
+    @media (min-width: $breakpoint-md) {
+      width: 43rem;
+      height: auto;
+    }
+    img {
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%;
+      height: 100%;
+      object-position: 50% 20%;
+      object-fit: cover;
+      @media (min-width: $breakpoint-md) {
+        border-radius: 0.5rem 0 0 0.5rem;
+        object-position: 0 20%;
+        object-fit: cover;
+      }
+    }
+  }
+  &-content {
+    padding: 2.4rem 2.1rem 0 2.1rem;
+    @media (min-width: $breakpoint-md) {
+      padding: 2.1rem 1.5rem 0 2.4rem;
+    }
+    h1 {
+      color: $clr-txt-card-h;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01rem;
+      line-height: 1.5rem;
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+      }
+    }
+    p {
+      padding-top: 0.7rem;
+      color: $clr-txt-card-p;
+      font-size: 0.82rem;
+      line-height: 1.3rem;
+      @media (min-width: $breakpoint-md) {
+        padding-top: 0.8rem;
+      }
+    }
+  }
+}
+
+/* Card Footer
+--------------------------------------*/
+.card-footer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  @media (min-width: $breakpoint-md) {
+    overflow: visible;
+  }
+}
+.card-person {
+  padding: 2rem 2.1rem 1rem 2.1rem;
+  display: flex;
+  @media (min-width: $breakpoint-md) {
+    padding: 1.2rem 2.5rem 0 2.5rem;
+  }
+  &-image {
+    width: 2.5rem;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+  &-info {
+    margin-left: 1rem;
+    &-name {
+      font-size: 0.85rem;
+      color: $clr-txt-person-name;
+    }
+    &-date {
+      font-size: 0.8rem;
+      color: $clr-txt-person-date;
+    }
+  }
+  &-share-btn {
+    margin-left: auto;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: $clr-bg-btn-1;
+    cursor: pointer;
+    @media (min-width: $breakpoint-md) {
+      margin-top: 0.1rem;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+/* Share Buttons
+--------------------------------------*/
+.wrapper {
+  position: absolute;
+  bottom: -4.5rem;
+  width: 100%;
+  height: 4.5rem;
+  transition: 0.2s;
+  @media (min-width: $breakpoint-md) {
+    position: relative;
+    bottom: 8rem;
+    left: 16.5rem;
+    width: 15.5rem;
+    height: 4rem;
+    transition: opacity 0.2s;
+    opacity: 0;
+  }
+}
+.card-share {
+  display: flex;
+  align-items: center;
+  background-color: $clr-bg-card-share;
+  height: 4.6rem;
+  padding: 0 2rem;
+  @media (min-width: $breakpoint-md) {
+    border-radius: 0.7rem;
+    height: 3.5rem;
+    padding: 0;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 0.8rem;
+    color: $clr-txt-share;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+  &-icon-group {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+    padding: 0 0 0 1rem;
+    gap: 1rem;
+  }
+  &-btn {
+    margin-left: auto;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: $clr-bg-btn-2;
+    cursor: pointer;
+    @media (min-width: $breakpoint-md) {
+      display: none;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+    img {
+      vertical-align: middle;
+      filter: brightness(4);
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -1rem;
+    border-width: 1rem;
+    border-style: solid;
+    border-color: $clr-bg-card-share transparent transparent transparent;
+  }
+}
+.show-box {
+  transition: 0.2s;
+  bottom: 0;
+  @media (min-width: $breakpoint-md) {
+    bottom: 8rem;
+    transition: opacity 0.2s;
+    opacity: 1;
+  }
+}
